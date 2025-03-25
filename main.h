@@ -1,6 +1,10 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <limits.h>
 #include <stdio.h>
-#include "main.h"
+
+int _printf(const char *format, ...);
 
 /**
  * main - Entry point
@@ -42,3 +46,5 @@ int main(void)
 	printf("Unknown:[%r]\n");
 	return (0);
 }
+
+#endif /*MAIN_H*/
