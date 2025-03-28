@@ -62,7 +62,7 @@ int _printf(const char *format, ...)
 					break;
 				default:
 					/* Handle % followed by an unknown specifier */
-					write(1, &format[i-1], 1);  /* Write the % character */
+					write(1, &format[i - 1], 1);  /* Write the % character */
 					count++;
 					i--;  /* Adjust index to process current character normally next time */
 					break;
