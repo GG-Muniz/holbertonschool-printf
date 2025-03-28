@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 		if (format[i] == 'c') /*Logic formats 'c'. */
 			c = va_arg(args, int), write(1, &c, 1), count++;
 		else if (format[i] == 's') /* Formating 's'. */
-			count += handle_string(va_arg(args, char *));
+			count += (*handle_string)(va_arg(args, char *));
 		else if (format[i] == '%') /*Formatng '%'. */
 			write(1, "%", 1), count++;
 		else
