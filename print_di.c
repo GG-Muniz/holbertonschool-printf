@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <unistd.h>
+#include "main.h"
 
 /**
  * print_number - Prints an integer recursively
@@ -28,29 +29,4 @@ void print_number(int n, int *count)
 	write(1, &num, 1);
 	(*count)++;
 }
-
-/**
- * handle_format - Handles format specifiers
- * @format: Format string
- * @i: Current index
- * @args: Argument list
- * @count: Pointer to count of printed characters
- *
- * Return: Updated index
- */
-int handle_format(const char *format, int i, va_list args, int *count)
-{
-	char c, *s;
-	int n;
-
-	switch (format[i])
-	{
-	case 'c':
-		c = va_arg(args, int);
-		write(1, &c, 1);
-		(*count)++;
-		break;
-	case 's':
-		s = va_arg(args, char *);
-		if (!
 
