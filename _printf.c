@@ -37,6 +37,8 @@ int _printf(const char *format, ...)
 			count += (*handle_string)(va_arg(args, char *));
 		else if (format[i] == '%') /*Formatng '%'. */
 			write(1, "%", 1), count++;
+		else if (format[i] == 'd' || format[i] == 'i') /* Handle integers */
+                        count += print_number(va_arg(args, int));
 		else
 			write(1, &format[--i], 1), count++;
 		i++;
