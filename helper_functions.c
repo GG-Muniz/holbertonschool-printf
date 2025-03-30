@@ -19,3 +19,4 @@ int handle_string(char *str)
 	}
 	return (count);
 }
+
