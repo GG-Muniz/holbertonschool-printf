@@ -3,7 +3,7 @@ Holbertonschool Printf Group Project
 
 
 ## Table of Content
-:computer: _printf.c: This is the main code, of our costume _printf functions.
+:computer: _printf.c: This is the main code, of our costum _printf functions.
 
 :computer: helper_funtions.c: Contains all helper functions called in _printf.c
 
@@ -13,7 +13,7 @@ Holbertonschool Printf Group Project
 
 ## Description
 
-The function _printf main focus is to print an output according to a certain format. Different ways to print an output is with the use of a format specifier.
+The functions _printf main focus is to print an output according to a certain format. Different ways to print an output is with the use of a format specifier.
 
 ### What is format specifier?
 
@@ -30,8 +30,10 @@ A format specifier in c are used to take input and print the output of a type. T
 Upon successful return, these functions return the number of character printed (excluding the null byte used to end output to string). If an output error is encountered, a negative value is returned.
 
 ## Technology
-
-The language we use for the creation of _printf() is the C language. This low level language allow us to create and control function from scratch and define its output. We are currently in our foundation trimester of C language and we are testing our knowledge by building the _print() from scratch.
+The function has been created usin: 
+* C language
+* Ubuntu Terminal - Linux OS
+* GitHub
 
 ### Compilation
 All the files that were used are compiled using:
@@ -47,10 +49,12 @@ The challenges we faced are the following:
 Solving these challenges helped us to develop critical thinking and emphasize collaboration.
 
 ## Reference
-This function work similar to ![printf(3)](https://man7.org/linux/man-pages/man3/printf.3.html). 
+As a code reference and guide for the project, one cna find more information in ![printf(3)](https://man7.org/linux/man-pages/man3/printf.3.html). 
 
 ## Developers
 ### Gabriel Garcia Muniz & Marivellisse Garcia 
-Hi, Im Gabriel Garcia Muniz one of the developer behind this project. To connect with me professionaly and explore more about my work, I invite you to visit my LinkedIn profile (http://www.linkedin.com/in/ggarciam98)
+Hi, Im Gabriel Garcia Muniz one of the developers behind this project. 
+To connect with me professionaly and explore more about my work, I invite you to visit my LinkedIn profile (http://www.linkedin.com/in/ggarciam98)
 
-Hey, Im Marivellisse Garcia one of the developer behind this project. You can find me on LinkedIn (https://www.linkedin.com/in/marivellisse-garcia/)
+Hey, Im Marivellisse Garcia one of the developers behind this project. 
+You can find me on LinkedIn (https://www.linkedin.com/in/marivellisse-garcia/)
