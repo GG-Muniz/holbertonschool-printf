@@ -29,18 +29,22 @@ int _printf(const char *format, ...)
 			count++;
 			continue;
 		}
-		if (format[++i] == '\0') /* When iteration reaches null byte return -1. */
+		if (format[++i] == '\0') /* When iteration reaches null byte return -1.*/
 			return (-1);
-		if (format[i] == 'c') /*Logic formats 'c'. */
+		if (format[i] == 'c') /*Logic formats 'c', also prints the number of chars.*/
 			c = va_arg(args, int), write(1, &c, 1), count++;
 		else if (format[i] == 's') /* Formating 's'. */
 			count += (*handle_string)(va_arg(args, char *));
-		else if (format[i] == '%') /*Formatng '%'. */
+		else if (format[i] == '%') /*Formatng '%', also prints the number of chars.*/
 			write(1, "%", 1), count++;
+		else
+			write(1, &format[--i], 1), count++;
+		else if (format[i] == 'd' || format[i] == 'i')
+			count += print_number(va_arg(args, int));
 		else
 			write(1, &format[--i], 1), count++;
 		i++;
 	}
-	va_end(args);/* End varaidic list of arguments.*/
-	return (count); /* Return count which hold the formated characters.*/
+	va_end(args);/* End variadic list of arguments.*/
+	return (count); /* Return count which holds the newly formated characters.*/
 }
