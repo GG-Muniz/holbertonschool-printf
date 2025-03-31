@@ -5,6 +5,8 @@ Holbertonschool Printf Group Project
 ## Table of Content
 :computer: _printf.c: This is the main code, of our costum _printf functions.
 
+:computer: digits.c: File will parse the character strings and format digits.
+
 :computer: helper_funtions.c: Contains all helper functions called in _printf.c
 
 :computer: main.h: It's the header file, contains the prototype to functions.
